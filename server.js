@@ -389,6 +389,6 @@ console.log('Welcome to ScanSYS - Warehouse Managment Solutions');
 console.log('==================================================');
 
 //Here we will listen to our port
-app.listen('1100', () => {
-  console.log("Server listening on port 1100");
+app.listen('5000', () => {
+  console.log("Server listening on port 5000");
 });
