@@ -1,0 +1,21 @@
+<div class="logo"></div>
+
+<div class="dashcontentHoldersmall main">
+    <div class="dashcontentTitle">
+      Update User
+    </div>
+
+    
+    <div class="dashcontent">
+        <h1>Username: <%= (typeof user != "undefined" ? user : "") %></h1>
+        <h1><span style="color: red;"><%= (typeof error != "undefined" ? error : "") %></span></h1>
+        <form method="post" >
+            <input type="hidden" value="<%= (typeof user != "undefined" ? user : "") %>" name="username" />
+            <input class="textbox" type="password" value="" name="password1" placeholder="New Password" /> <br>
+            <input class="textbox" type="password" value="" name="password2" placeholder="Confrim New Password" /> <br>
+            <input type="radio" name="rank" value="1" checked> Not Admin<br>
+            <input type="radio" name="rank" value="2"> Admin<br>
+            <input name="updateuserdata" class="button" type="submit" value="Update" /> <br /> <br />
+        </form>
+    </div>
+</div>

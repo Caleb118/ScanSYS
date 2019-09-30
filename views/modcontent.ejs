@@ -1,0 +1,20 @@
+<div class="logo"></div>
+
+<div class="dashcontentHoldersmall main">
+    <div class="dashcontentTitle">
+        SKU: <%= (typeof sku != "undefined" ? sku : "") %>
+    </div>
+
+    
+    <div class="dashcontent">
+        <h1><span style="color: red;"><%= (typeof error != "undefined" ? error : "") %></span></h1>
+        <form method="post" action="/dashboard">
+            <input type="hidden" value="<%= (typeof checkin != "undefined" ? checkin : "") %>" name="checkin">
+            <input type="hidden" value="<%= (typeof sku != "undefined" ? sku : '') %>" name="sku">
+            <input class="textbox" type="text" value="<%= (typeof name != "undefined" ? name : '') %>" name="name" placeholder="Name" /> <br>
+            <input class="textbox" type="text" value="<%= (typeof location != "undefined" ? location : '') %>" name="location" placeholder="Location" /> <br>
+            <textarea class="packagetextarea" name="contents" placeholder="Product contents or description here."><%= (typeof contents != "undefined" ? contents : '') %></textarea>
+            <input name="create" class="button" type="submit" value="<%= (typeof type != "undefined" ? type : '') %>" /> <br /> <br />
+        </form>
+    </div>
+</div>

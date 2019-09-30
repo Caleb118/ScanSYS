@@ -1,0 +1,20 @@
+<div class="logo"></div>
+
+<div class="dashcontentHoldersmall main">
+    <div class="dashcontentTitle">
+      New User
+    </div>
+
+    
+    <div class="dashcontent">
+        <h1><span style="color: red;"><%= (typeof error != "undefined" ? error : "") %></span></h1>
+        <form method="post" action="/dashboard">
+            <input class="textbox" type="text" value="<%= (typeof name != "undefined" ? name : '') %>" name="name" placeholder="Name" /> <br>
+            <input class="textbox" type="password" value="" name="password1" placeholder="Password" /> <br>
+            <input class="textbox" type="password" value="" name="password2" placeholder="Confrim Password" /> <br>
+            <input type="radio" name="rank" value="1" checked> Not Admin<br>
+            <input type="radio" name="rank" value="2"> Admin<br>
+            <input name="createuser" class="button" type="submit" value="Create" /> <br /> <br />
+        </form>
+    </div>
+</div>

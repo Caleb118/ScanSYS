@@ -1,0 +1,28 @@
+<div class="logo"></div>
+
+<div class="dashcontentHoldersmall main">
+        <div class="dashcontentTitle">
+          Welcome Back
+        </div>
+    
+        
+        <div class="dashcontent">
+            <center><h1><%= (typeof info != "undefined" ? info : "") %></h1></center>
+            <table width="100%">
+                <tr>
+                    <td>
+                        <center>
+                            <h2>MOTD:</h2>
+                            <textarea class="packagetextarea" readonly><%= (typeof mdata != "undefined" ? mdata : "") %></textarea>
+                         </center>
+                    </td>
+                    
+                    <td width="40%" style="padding-left: 20px;">
+                        <center><h1>Getting Started</h1></center>
+                        <h2>To get started please scan a SKU or search for terms with the search query at the top of this page.</h2>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    

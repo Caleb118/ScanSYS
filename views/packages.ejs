@@ -1,0 +1,38 @@
+<div class="logo"></div>
+
+
+<div class="dashcontentHolder">
+    <div class="dashcontentTitle">
+       Packages
+    </div>
+
+    
+    <div class="dashcontent">
+        <table class="pTable">
+            <tr>
+                <td>ID</td>
+                <td>SKU</td>
+                <td>NAME</td>
+                <td>LOCATION</td>
+                <td>CHECKED IN BY</td>
+                <td>MODIFIED BY</td>
+                <td></td>
+                
+                </tr>
+        <% for (i = 0; i < data.length; i++) {  %>
+            <tr>
+                <td><%- data[i].id %></td>
+                <td><%- data[i].sku %></td>
+                <td><%- data[i].name %></td>
+                <td><%- data[i].location %></td>
+                <td><%- data[i].checkin %></td>
+                <td><%- data[i].modify %></td>
+                <td><form method="POST">
+                        <input type="hidden" name="sku" class="button" value="<%- data[i].sku %>">
+                        <input type="submit" class="button" value="View">
+                    </form></td>
+            </tr>
+        <% } %>
+        </table>
+    </div>
+</div>

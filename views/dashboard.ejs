@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <head>
+        <title>ScanSYS - Inventory Management System</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="images/logo.png" />
+        <script src="script.js"> </script>
+
+    </head>
+    <body>
+        <div class="dashsearcholder">
+            <form method="post">
+                <center><input name="sku" placeholder="Search or Scan" onFocus="this.select()" autofocus="autofocus"  type="textbox" class="dashsearchbox"></center>
+            </form>
+        </div>
+
+        <% if (exist == true) {  %>
+            <% include showcontent %>  
+        <% } %>
+
+        <% if (noexist == true) {  %>
+            <% include modcontent %>  
+        <% } %>
+
+        <% if (home == true) {  %>
+            <% include homecontent %>  
+        <% } %>
+
+        <% if (packages == true) {  %>
+            <% include packages %>  
+        <% } %>
+
+        <% if (users == true) {  %>
+            <% include users %>  
+        <% } %>
+
+        <% if (motd == true) {  %>
+            <% include motd %>  
+        <% } %>
+
+        <% if (newuser == true) {  %>
+            <% include newuser %>  
+        <% } %>
+
+        <% if (updateuser == true) {  %>
+            <% include updateuser %>  
+        <% } %>
+        
+
+        <% if (search == true) { %>
+            <div class="boxParent">
+            <% for (i = 0; i < searchArray.length; i++) {  %>
+                <%- include('results', {name: searchArray[i].name, contents: searchArray[i].contents, sku: searchArray[i].sku }); %>
+            <% } %>
+            </div>
+        <% } %>
+
+        <% include footer %> 
+
+        <% if (admin == true) {  %>
+            <% include admin %>  
+        <% } %>
+    </body>
+
+</html>

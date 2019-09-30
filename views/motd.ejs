@@ -1,0 +1,16 @@
+<div class="logo"></div>
+
+<div class="dashcontentHoldersmall main">
+        <div class="dashcontentTitle">
+          MOTD
+        </div>
+    
+        
+        <div class="dashcontent">      
+            <form method="POST">
+                <textarea name="motd" class="packagetextarea"><%= (typeof mdata != "undefined" ? mdata : "") %></textarea>
+                <input type="submit" name="updatemotd" class="button" value="Update MOTD">
+            </form>         
+        </div>
+    </div>
+    

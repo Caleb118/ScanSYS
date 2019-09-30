@@ -1,0 +1,60 @@
+<div class="logo"></div>
+
+<div class="cover" id="popup">
+    <div class="dashcontentHoldersmall main">
+            <div class="dashcontentTitle">
+                Confirmation
+            </div>
+            <div class="dashcontent popup">
+               <center><h1>Are you sure you want to delete?</h1></center>
+
+               <form method="post">
+                    <input type="hidden" value="<%= (typeof sku != "undefined" ? sku : '') %>" name="sku">
+                    <input type="submit" name="delete" class="delbutton" value="Yes">
+                </form>
+
+                <button class="editbutton popup" onclick="hidePopup();">No</button>
+
+            </div>
+    </div>
+</div>
+
+<div class="dashcontentHolder">
+    <div class="dashcontentTitle">
+        SKU: <%= (typeof sku != "undefined" ? sku : "") %>
+    </div>
+
+    
+    <div class="dashcontent">
+        <table width="100%">
+            <tr>
+                <td>
+                    <center>
+                        <h1>Contents:</h1>
+                        <textarea class="packagetextarea" readonly><%= (typeof contents != "undefined" ? contents : "") %></textarea>
+                     </center>
+                </td>
+                
+                <td>
+                    <center>
+                        <h1><%= (typeof name != "undefined" ? name : "") %></h1> <br>
+                        <h1 class="searchInfo">Current Location: <b><%= (typeof location != "undefined" ? location : "") %></b></h1>
+                        <h1 class="searchInfo">Package checked in by: <%= (typeof checkin != "undefined" ? checkin : "") %></h1>
+                        <h1 class="searchInfo">Last Modified By: <%= (typeof modify != "undefined" ? modify : "") %></h1>
+                    </center>
+
+                    <button class="delbutton main" onclick="showPopup();">Delete</button>
+                    <form method="post">
+                        <input type="hidden" value="<%= (typeof location != "undefined" ? location : "") %>" name="location">
+                        <input type="hidden" value="<%= (typeof contents != "undefined" ? contents : "") %>" name="contents">
+                        <input type="hidden" value="<%= (typeof checkin != "undefined" ? checkin : "") %>" name="checkin">
+                        <input type="hidden" value="<%= (typeof name != "undefined" ? name : '') %>" name="name">
+                        <input type="hidden" value="<%= (typeof sku != "undefined" ? sku : '') %>" name="sku">
+                        <input type="submit" name="modify" value="Modify" class="editbutton main">
+
+                   </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

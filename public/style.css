@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+    body {
+        background-image: url('images/background.png');
+        background-repeat: repeat-xy;
+        font-family: 'Manjari', sans-serif;
+        margin: 0px;
+    }
+    .logo {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('images/logo.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100px;
+        height: 150px;
+    }
+    .contentHolder {
+        width: 50%;
+        margin: auto auto;
+        border-radius: 6px;
+        background-color: #272727;
+        box-shadow: 0px 1px 5px #1f1f1f;
+        color: #d9e0dd; 
+    }
+    .contentTitle {
+        background-image: linear-gradient(#3c3c3c, #363636);
+        width: 100%;
+        height: 5vh;
+        line-height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        margin-bottom: 0px;
+        border-top: 1px solid #4a4a4a;
+        margin-bottom: 1px;
+        border-bottom: 1px solid #3b3b3b;
+        text-align: center;
+        color: #d9e0dd;
+        text-shadow: 1px 1px 0px #000000;
+        
+    }
+    .content {
+        background-color: #404040;
+        margin-left: auto;
+        margin-right: auto;
+        width: 94%;
+        padding-top: 20px;
+        padding-left: 1%;
+        padding-right: 5%;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        margin-top: 0px;
+    }
+    .textbox {
+        background-color: #3c3c3c;
+        border: 1px solid #2a2a2a;
+        border-radius: 5px;
+        height: 30px;
+        color: #d9e0dd;
+        margin: 5px;
+        padding: 3px;
+        width: 80%;
+    }
+    .button {
+        background-image: linear-gradient(#3c3c3c, #363636);
+        border-top: 1px solid #4a4a4a;  
+        color: #d9e0dd; 
+        box-shadow: 0px 1px 1px black;
+        height: 5vh;
+        margin-top: 5px;
+        font-size: 2vh;
+        border: 0px;
+        border-radius: 5px;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        margin-left: 5px;
+    }
+    .lRight {
+        width: 50%;
+        text-align: center;
+    }
+    .dashsearcholder {
+        opacity: 0.8;
+        margin-left: auto;
+        margin-right: auto;
+        height: 8vh;
+        width: 100%;
+        margin-top: 0px;
+        transition: 0.5s;
+    }
+   
+    .dashsearchbox {
+        margin-top: 0px;
+        border: 0px;
+        text-align: center;
+        height: 7vh;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        opacity: 0.5;
+        background-color: #000;
+        font-size: 60px;
+    }
+    .dashcontentHolder {
+        width: 80%;
+        margin: auto auto;
+        border-radius: 6px;
+        background-color: #272727;
+        box-shadow: 0px 1px 5px #1f1f1f;
+        color: #d9e0dd; 
+    }
+    .dashcontentHoldersmall {
+        margin: auto auto;
+        border-radius: 6px;
+        background-color: #272727;
+        box-shadow: 0px 1px 5px #1f1f1f;
+        color: #d9e0dd; 
+    }
+    .dashcontentHoldersmall.main {
+        width: 40%;
+    }
+    .dashcontentHoldersmall.results {
+        float: left;
+        margin: 2vh;
+        width: 30%;
+    }
+    .dashcontentTitle {
+        background-image: linear-gradient(#3c3c3c, #363636);
+        width: 100%;
+        height: 5vh;
+        line-height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        margin-bottom: 0px;
+        border-top: 1px solid #4a4a4a;
+        margin-bottom: 1px;
+        border-bottom: 1px solid #3b3b3b;
+        text-align: center;
+        color: #d9e0dd;
+        text-shadow: 1px 1px 0px #000000;
+        
+    }
+    .dashcontent {
+        background-color: #404040;
+        margin-left: auto;
+        margin-right: auto;
+        width: 94%;
+        padding-top: 20px;
+        text-align: center;
+        padding-left: 1%;
+        padding-right: 5%;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        padding-bottom: 2vh;
+        margin-top: 0px;
+        font-size: 1vh;
+    }
+    .dashcontent form {
+        font-size: 2vh;
+    }
+    .dashcontent.popup {
+        height: 10vh;
+    }
+    .packagetextarea {
+        width: 100%;
+        height: 30vh;
+        background-color: #3c3c3c;
+        border: 1px solid #2a2a2a;
+        border-radius: 5px;
+        resize: none;
+        color: #d9e0dd;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 3px;
+        font-size: 1.5vh;
+    }
+    .searchInfo {
+        background-color: #3c3c3c;
+        border: 1px solid #2a2a2a;
+        padding: 5px;
+        border-radius: 5px;
+        width: 50%;
+        line-height: 3vh;
+        padding-bottom: 0px;
+    }
+    .delbutton {
+        background-image: linear-gradient(#ff5454, #ff3c3c);
+        height: 5vh;
+        font-size: 2vh;
+        border: 2px solid #ff6767;
+        float: right;
+        margin-left: 15px;
+        margin-top: 5px;
+        border-radius: 5px;
+        text-shadow: -1px -1px 0 #494949, 1px -1px 0 #494949, -1px 1px 0 #494949, 1px 1px 0 #494949;
+        color: #FFF; 
+    }
+    .delbutton:hover {
+        background-color: #ff5454;
+        background-image: none;
+    }
+    .delbutton.main {
+        margin-top: 100px;
+    }
+    .editbutton {
+        background-image: linear-gradient(#4bfd4e, #2aff2d);
+        height: 5vh;
+        margin-top: 5px;
+        font-size: 2vh;
+        border: 2px solid #80ff82;
+        border-radius: 5px;
+        text-shadow: -1px -1px 0 #6e6e6e, 1px -1px 0 #6e6e6e, -1px 1px 0 #6e6e6e, 1px 1px 0 #6e6e6e;
+        color: #FFF; 
+    }
+    .editbutton:hover {
+        background-color: #74ff76;
+        background-image: none;
+    }
+    .editbutton.popup {
+        float: left;
+    }
+    .editbutton.main {
+        margin-top: 100px;
+        float: right;
+    }
+    .cover {
+        padding-top: 20%;
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/coverbg.png');
+    }
+    .footer {
+        width: 100vh;
+        margin-top: 2vh;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: #d9e0dd;
+    }
+    .aspacer {
+        width: 100%;
+        height: 9vh;
+    }
+    .adminbar {
+        position: fixed;
+        bottom: 0px;
+        left: 40vw;
+        width: 20vw;
+        height: 9vh;
+        min-width: 250px;
+        background-color: transparent;
+        background-image: url('images/coverbg.png');
+        padding: 10px;
+        text-align: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        opacity: 0.7;
+    }
+    .adminbar form {
+        padding-top: 2vh;
+        float: left;
+        margin-left: 9%;
+        height: 7vh;
+        transition: 0.5s;
+    }
+    .adminbar form:hover {
+        padding-top: 0vh;
+        height: 9vh;
+        transition: 0.5s;
+    }
+    .adminbar input {
+        height: 7vh;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+        border: 0px;
+        font-size: 0px;
+        outline: none;
+        width: 7vh;
+    }
+    .packages {
+        background-image: url('images/packages.png');
+    }
+    .users {
+        background-image: url('images/users.png');
+    }
+    .motd {
+        background-image: url('images/motd.png');
+    }
+    .pTable {
+        width: 100%;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pTable tr {
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        font-size: 2vh;
+        border-radius: 15px;
+    }
+    .pTable tr:hover {
+        background-color: #2a2a2a;
+    }
+    .boxParent::after {
+        content: " ";
+        display: block; 
+        height: 0; 
+        clear: both;
+    }

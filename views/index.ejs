@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <head>
+        <title>ScanSYS - Inventory Management System</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="images/logo.png" />
+
+    </head>
+    <body>
+        <div class="logo"></div>
+        <div class="contentHolder">
+            <div class="contentTitle">
+                    Login
+                </div>
+                <div class="content">
+                    <table width="100%">
+                        <tr>
+                            <td width="50%">
+                                <h1>Welcome!</h1>
+                                    <hr>
+                                    <p>ScanSYS is the only tool you will ever need to quickly and efficiently clean up your inventory room, or warehouse.</p>
+
+                                    <br>
+                                    <p>If you're missing your login credentials please contact your software adminstrator.</p>
+                            </td>
+                            <td class="lRight">
+                                <img src="images/user.png" width="40%">
+                                <br> <span style="color: red"><%= (typeof error != "undefined" ? error : "") %></span>
+                                <form method="post" action="/">
+                                    <input class="textbox" type="text" name="uname" placeholder="Username" /> <br>
+                                    <input class="textbox" type="password" name="pass" placeholder="Password" /> <br>
+                                    <input class="button" type="submit" value="Login" /> <br /> <br />
+                                    
+                                    
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+        <% include footer %> 
+    </body>
+
+</html>

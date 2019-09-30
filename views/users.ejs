@@ -1,0 +1,41 @@
+<div class="logo"></div>
+
+
+<div class="dashcontentHolder">
+    <div class="dashcontentTitle">
+       Users
+    </div>
+
+    
+    <div class="dashcontent">
+        <form method="POST">
+            <input type="submit" class="button" name="newuser" value="+ New User">
+        </form>
+        
+        <table class="pTable">
+            <tr>
+                <td>ID</td>
+                <td>USERNAME</td>
+                <td>RANK</td>
+                <td></td>
+                <td></td>
+                
+                </tr>
+        <% for (i = 0; i < data.length; i++) {  %>
+            <tr>
+                <td><%- data[i].ID %></td>
+                <td><%- data[i].Username %></td>
+                <td><%- data[i].Level %></td>
+                <td><form method="post">
+                        <input type="hidden" value="<%- data[i].Username %>" name="username">
+                        <input type="submit" name="deleteuser" class="delbutton" value="Delete">
+                    </form></td>
+                <td><form method="POST">
+                        <input type="hidden" name="username" class="button" value="<%- data[i].Username %>">
+                        <input type="submit" class="button" name="updateuser" value="Update User">
+                    </form></td>
+            </tr>
+        <% } %>
+        </table>
+    </div>
+</div>

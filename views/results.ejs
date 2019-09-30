@@ -1,0 +1,18 @@
+<div class="dashcontentHoldersmall results">
+        <div class="dashcontentTitle">
+            <%= (typeof name != "undefined" ? name : "") %>
+        </div>
+    
+        
+        <div class="dashcontent">
+
+            <textarea class="packagetextarea" readonly><%= (typeof contents != "undefined" ? contents : "") %></textarea>
+            
+            <center>
+            <form method="POST">
+                <input type="hidden" name="sku" class="button" value="<%= (typeof sku != "undefined" ? sku : "") %>">
+                <input type="submit" class="button" value="View">
+            </form>
+            </center>
+        </div>
+    </div>
